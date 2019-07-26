@@ -5,8 +5,8 @@ From: pavel-demin/singularity-ubuntu:1804
 %runscript
 
     echo "Rooooar!"
-    blastp --version
-    echo "Done"
+    blastp -version
+    echo "Done!"
 
 %post
 
