@@ -4,10 +4,23 @@ From: pavel-demin/singularity-ubuntu:1804
 
 %runscript
 
-    echo "Rooooar!"
     blastp -version
-    echo "Done!"
 
 %post
 
-    apt-get update && apt-get -y install ncbi-blast+
+    apt-get update 
+    apt-get --yes install ncbi-blast+
+
+%labels
+
+    AUTHOR Richel J.C. Bilderbeek
+
+    NAME singularity_example_4
+ 
+    DESCRIPTION Singularity example 4: Singularity 2.5, Ubuntu 18.4 and ncbi-blast+
+
+    USAGE simply run the container
+
+    URL https://github.com/richelbilderbeek/singularity_example_4
+
+    VERSION 1.0
