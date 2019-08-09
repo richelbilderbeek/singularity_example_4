@@ -1,0 +1,2 @@
+#!/bin/bash
+sudo singularity --debug build singularity_example_4.sif singularity_example_4.def

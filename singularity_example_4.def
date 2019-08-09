@@ -1,6 +1,5 @@
-Bootstrap: shub
-
-From: pavel-demin/singularity-ubuntu:1804
+BootStrap: library
+From: ubuntu:18.10
 
 %runscript
 
@@ -8,8 +7,8 @@ From: pavel-demin/singularity-ubuntu:1804
 
 %post
 
-    apt-get update 
-    apt-get --yes install ncbi-blast+
+    apt-get update
+    apt-get install --yes ncbi-blast+
 
 %labels
 
@@ -17,7 +16,7 @@ From: pavel-demin/singularity-ubuntu:1804
 
     NAME singularity_example_4
  
-    DESCRIPTION Singularity example 4: Singularity 2.5, Ubuntu 18.4 and ncbi-blast+
+    DESCRIPTION Singularity example 4: Singularity 3.2.1, Ubuntu 18.10 and NCBI tools
 
     USAGE simply run the container
 
