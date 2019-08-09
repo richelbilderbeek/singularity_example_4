@@ -25,7 +25,7 @@ script:
   - which singularity
   # Show the singularity version
   - singularity --version
-  # Build an image, must use sudo
-  - sudo ./script
+  # Build the container, must use sudo
+  - sudo ./build_container
   # Run the container
-  - ./ubuntu_ncbi.simg
+  - ./singularity_example_4.sif
